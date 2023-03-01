@@ -38,4 +38,11 @@ const showAllNews = (data, category_name) => {
     data.forEach(singleNews => {
         console.log(singleNews);
     })
+    
+    const newsContainer = document.getElementById("all-news");
+  newsContainer.innerHTML = "";
+  data.forEach((singleNews) => {
+    const { _id, image_url, title, details, author, total_view,rating } = singleNews;
+    
+  })
 }
